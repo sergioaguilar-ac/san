@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de San Valentín</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            background-image: url('https://f.fcdn.app/imgs/685abe/www.minisouruguay.com.uy/miniuy/4e08/original/catalogo/694208357569069420835756903/1500-1500/peluche-carinositos-generosita.jpg'); /* Reemplaza con la URL de tu imagen */
+            background-color: #f7a7c6; /* Fondo rosa suave */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        .carta {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            color: #09c4f3;
+            margin-bottom: 15px;
+        }
+
+        .mensaje {
+            font-size: 1.5em;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+
+        .corazones {
+            font-size: 2em;
+            color: #e6007f;
+            margin-bottom: 20px;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .boton {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            transform: scale(1.1);
+        }
+
+        .si {
+            background-color: #8fce00;
+            color: white;
+        }
+
+        .no {
+            background-color: #e03232;
+            color: white;
+        }
+
+        .si:hover {
+            background-color: #7fb800;
+        }
+
+        .no:hover {
+            background-color: #d12626;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="carta">
+        <h1>Priscila Mancilla</h1>
+        <p class="mensaje">¿Quieres ser mi San Valentín?</p>
+        
+        <div class="corazones">
+            ❤️ 💕 💖
+        </div>
+
+        <div class="botones">
+            <button class="boton si" onclick="openNewTabYes()">Sí</button>
+            <button class="boton no" onclick="openNewTabNo()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function openNewTabYes() {
+            // Abrir nueva pestaña con el mensaje para "Sí"
+            const newWindow = window.open('', '', 'width=600,height=400');
+            newWindow.document.write(`
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Te Amo</title>
+                    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+                    <style>
+                        body {
+                            background-color: #f7a7c6;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            margin: 0;
+                            font-family: 'Roboto', sans-serif;
+                            text-align: center;
+                        }
+                        .mensaje-final {
+                            background-color: #ffffff;
+                            padding: 40px;
+                            border-radius: 15px;
+                            width: 80%;
+                            max-width: 600px;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                        }
+                        h1 {
+                            font-family: 'Dancing Script', cursive;
+                            font-size: 2.5em;
+                            color: #e6007f;
+                            margin-bottom: 15px;
+                        }
+                        .mensaje {
+                            font-size: 1.5em;
+                            color: #333333;
+                            margin-bottom: 30px;
+                        }
+                        .corazones {
+                            font-size: 2em;
+                            color: #e6007f;
+                            margin-bottom: 20px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="mensaje-final">
+                        <h1>¡Sabía que ibas a decir que sí!</h1>
+                        <p class="mensaje">Te amo mi pedacito</p>
+                        <div class="corazones">
+                            ❤️ 💕 💖
+                        </div>
+                    </div>
+                </body>
+                </html>
+            `);
+        }
+
+        function openNewTabNo() {
+            // Abrir nueva pestaña con el mensaje para "No"
+            const newWindow = window.open('', '', 'width=600,height=400');
+            newWindow.document.write(`
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Te pego?</title>
+                    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+                    <style>
+                        body {
+                            background-color: #f7a7c6;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            margin: 0;
+                            font-family: 'Roboto', sans-serif;
+                            text-align: center;
+                        }
+                        .mensaje-final {
+                            background-color: #ffffff;
+                            padding: 40px;
+                            border-radius: 15px;
+                            width: 80%;
+                            max-width: 600px;
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                        }
+                        h1 {
+                            font-family: 'Dancing Script', cursive;
+                            font-size: 2.5em;
+                            color: #0066cc; /* Color azul */
+                            margin-bottom: 15px;
+                        }
+                        .mensaje {
+                            font-size: 1.5em;
+                            color: #333333;
+                            margin-bottom: 30px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="mensaje-final">
+                        <h1>Te pego? O que te hago</h1>
+                        <p class="mensaje">DIMELO</p>
+                    </div>
+                </body>
+                </html>
+            `);
+        }
+    </script>
+
+</body>
+</html>
+
+
+
